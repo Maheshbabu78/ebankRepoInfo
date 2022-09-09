@@ -25,7 +25,7 @@ import com.example.ebanking.service.UserService;
 @RestController
 @RequestMapping("/user")
 @CrossOrigin(origins = "http://localhost:4200")
-//security controller seven
+//security controller eight
 public class SecurityController {
 	
 	@Autowired
