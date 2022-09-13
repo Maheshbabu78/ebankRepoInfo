@@ -16,7 +16,7 @@ import java.util.List;
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping("/user")
-//user controller class one
+//user controller class two
 public class UserController {
     @Autowired
     private TransactionService transactionService;
