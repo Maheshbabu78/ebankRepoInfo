@@ -28,7 +28,7 @@ import java.util.Random;
 @RestController
 @RequestMapping("/user")
 @CrossOrigin(origins = "http://localhost:4200")
-//card controller six 
+//card controller seven 
 public class CardController {
 
     @Autowired
