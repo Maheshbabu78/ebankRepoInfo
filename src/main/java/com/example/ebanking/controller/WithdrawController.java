@@ -1,6 +1,7 @@
 //package com.example.ebanking.controller;
 //
 //import com.example.ebanking.entity.BankWithdraw;
+//import com.example.ebanking.entity.BkashUtility;
 ////import com.example.ebanking.entity.BkashUtility;
 //import com.example.ebanking.entity.MobileWithdraw;
 //import com.example.ebanking.entity.Transactions;
@@ -35,7 +36,13 @@
 //    public ResponseEntity<?> sendMoney(@PathVariable BigInteger balance, @PathVariable String email, @PathVariable int id,
 //                                       @RequestBody MobileWithdraw mobileWithdraw, Transactions theTransactions) {
 //        mobileWithdraw.setWithdrawType("Bkash");
-//        BigInteger newBalance = balance.subtract(mobileWithdraw.getAmount().add(bkashUtility.getB2cFee()));
+//        BigInteger newBalance;
+//		try {
+//			newBalance = balance.subtract(mobileWithdraw.getAmount().add(BkashUtility.getB2cFee()));
+//		} catch (Exception e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 //        BigInteger newAccountNo = mobileWithdraw.getAccountNo();
 //        int res = mobileWithdraw.getAmount().compareTo(BigInteger.valueOf(50));
 //        if (res < 0) {
